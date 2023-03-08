@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .heading {
+    @apply text-neutral-very-dark-blue font-medium text-2xl;
+  }
+  .description {
+    @apply text-neutral-grayish-blue text-lg mt-4 mb-12;
+  }
+}
