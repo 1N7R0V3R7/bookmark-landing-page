@@ -9,4 +9,7 @@
   .description {
     @apply text-neutral-grayish-blue text-lg mt-4 mb-12;
   }
+  .primary-btn {
+    @apply bg-primary-blue text-white rounded-lg hover:bg-white hover:text-primary-blue hover:ring-2 hover:ring-primary-blue;
+  }
 }
