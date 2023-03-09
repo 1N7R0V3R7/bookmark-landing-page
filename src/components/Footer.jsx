@@ -7,11 +7,11 @@ const Footer = () => {
 
   const [email, setEmail] = useState('')
 
-  const rePattern = //
+  const rePattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
   console.log(email);
 
   // TODO: Add a Logo.jsx file to replace all the other different uses of logo.svg
-  // TODO: Add regEx to input field and apply error handling
+
   return (
     <div className="mt-32 text-center">
       <div className="bg-primary-blue py-16 text-white">
