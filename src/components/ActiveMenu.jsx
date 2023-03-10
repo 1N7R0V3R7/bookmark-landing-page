@@ -1,15 +1,15 @@
 import React from "react";
-import logoBookmark from "../assets/images/logo-bookmark-white.svg";
 import closeIcon from "../assets/images/icon-close.svg";
 import facebookIcon from "../assets/images/icon-facebook.svg";
 import twitterIcon from "../assets/images/icon-twitter.svg";
+import Logo from "./Logo";
 
 const ActiveMenu = ({toggleMenu}) => {
   return (
     <div className="bg-neutral-very-dark-blue z-30 bg-opacity-90 fixed h-screen top-0 w-full">
       <div className="w-[85%] mx-auto mt-8 text-white text-2xl">
         <div className="flex justify-between items-center mb-4">
-          <img src={logoBookmark} alt="Bookmark Logo" className="h-8" />
+          <Logo bookmark='#242A45' circle='#fff' text='#fff' />
           <img src={closeIcon} alt="Close Menu Icon" className="h-5" onClick={() => toggleMenu()} />
         </div>
         <ul className="uppercase text-center tracking-widest grid divide-y divide-white/10">
