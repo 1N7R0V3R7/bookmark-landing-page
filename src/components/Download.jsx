@@ -35,7 +35,7 @@ const Download = () => {
         We've got more browsers in the pipeline. Please do let us know if you've
         got a favorite you'd like us to prioritize.
       </p>
-      <div className="flex flex-col gap-6">{renderExtensions}</div>
+      <div className="flex flex-col gap-6 lg:grid lg:grid-cols-3 lg:max-w-4xl lg:mx-auto">{renderExtensions}</div>
     </div>
   );
 };

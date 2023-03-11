@@ -43,8 +43,8 @@ const Features = () => {
           websites. your bookmarks sync between your devices so you can access
           them on the go.
         </p>
-        <ul className="text-neutral-dark-gray text-xl grid divide-y">
-          <li className=""></li>
+        <ul className="text-neutral-dark-gray text-xl grid divide-y lg:divide-y-0 lg:grid-cols-3 lg:gap-2 lg:max-w-2xl lg:mx-auto">
+          <li className="lg:hidden"></li>
           {bookmarkFeatures.map((feature) => (
             <li
               key={feature.id}
@@ -53,12 +53,13 @@ const Features = () => {
             >
               {feature.title}
               {feature.id === currTab && (
-                <div className="bg-primary-red h-1 absolute bottom-0 left-0 translate-x-1/2 w-40"></div>
+                <div className="bg-primary-red h-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-40"></div>
               )}
             </li>
           ))}
-          <li className=""></li>
+          <li className="lg:hidden"></li>
         </ul>
+        <hr className="hidden lg:block lg:max-w-3xl lg:mx-auto" />
       </div>
       {bookmarkFeatures.map((feature, index) => {
         if (feature.id === currTab) {
